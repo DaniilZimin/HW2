@@ -1,12 +1,10 @@
 package com.company;
 
 public class Main {
-
     public static void main(String[] args) {
         //Задание 1 && 2
         byte clientOS = 1;
         int clientDeviceYear = 2020;
-
 
         if (clientOS == 0){
             if(clientDeviceYear < 2015){
@@ -14,10 +12,8 @@ public class Main {
             }else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
-
         }else if(clientOS == 1 && clientDeviceYear < 2015){
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-
         }else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
@@ -41,7 +37,6 @@ public class Main {
             System.out.println("Потребуется дней: " + (estimatedDeliveryTime+1));
         }else if (deliveryDistance <= 100){
             System.out.println("Потребуется дней: " + (estimatedDeliveryTime+2));
-
         }
 
         //Задание 5
@@ -69,10 +64,6 @@ public class Main {
                 break;
             default:
                 System.out.println("Такого месяца не существует!");
-
         }
-
-
     }
-
 }
