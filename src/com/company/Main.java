@@ -7,13 +7,13 @@ public class Main {
         int clientDeviceYear = 2020;
         int yearOfSmartphonesImprovement = 2015;
 
-        if (clientOS == 0){
-            if (clientDeviceYear < yearOfSmartphonesImprovement){
+        if (clientOS == 0) {
+            if (clientDeviceYear < yearOfSmartphonesImprovement) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            }else {
+            } else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        } else if (clientOS == 1 && clientDeviceYear < yearOfSmartphonesImprovement){
+        } else if (clientOS == 1 && clientDeviceYear < yearOfSmartphonesImprovement) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
@@ -22,7 +22,7 @@ public class Main {
         //Задание 3
         int year = 2021;
         boolean leapYear = year % 4 == 0 && year % 100 != 0;
-        if (leapYear){
+        if (leapYear) {
             System.out.println(year + " год является високосным!");
         } else {
             System.out.println(year + " год не является високосным!");
@@ -32,17 +32,17 @@ public class Main {
         byte deliveryDistance = 95;
         int estimatedDeliveryTime = 1;
 
-        if (deliveryDistance <= 20){
+        if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: " + estimatedDeliveryTime);
-        } else if (deliveryDistance > 20 && deliveryDistance <= 60){
-            System.out.println("Потребуется дней: " + (estimatedDeliveryTime+1));
-        } else if (deliveryDistance <= 100){
-            System.out.println("Потребуется дней: " + (estimatedDeliveryTime+2));
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("Потребуется дней: " + (estimatedDeliveryTime + 1));
+        } else if (deliveryDistance <= 100) {
+            System.out.println("Потребуется дней: " + (estimatedDeliveryTime + 2));
         }
 
         //Задание 5
         int monthNumber = 12;
-        switch (monthNumber){
+        switch (monthNumber) {
             case 1:
             case 2:
             case 12:
