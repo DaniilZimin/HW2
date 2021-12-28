@@ -5,16 +5,17 @@ public class Main {
         //Задание 1 && 2
         byte clientOS = 1;
         int clientDeviceYear = 2020;
+        int yearOfSmartphonesImprovement = 2015;
 
         if (clientOS == 0){
-            if(clientDeviceYear < 2015){
+            if (clientDeviceYear < yearOfSmartphonesImprovement){
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             }else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        }else if(clientOS == 1 && clientDeviceYear < 2015){
+        } else if (clientOS == 1 && clientDeviceYear < yearOfSmartphonesImprovement){
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }else {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
@@ -23,7 +24,7 @@ public class Main {
         boolean leapYear = year % 4 == 0 && year % 100 != 0;
         if (leapYear){
             System.out.println(year + " год является високосным!");
-        }else {
+        } else {
             System.out.println(year + " год не является високосным!");
         }
 
@@ -31,11 +32,11 @@ public class Main {
         byte deliveryDistance = 95;
         int estimatedDeliveryTime = 1;
 
-        if(deliveryDistance <= 20){
+        if (deliveryDistance <= 20){
             System.out.println("Потребуется дней: " + estimatedDeliveryTime);
-        }else if (deliveryDistance > 20 && deliveryDistance <= 60){
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60){
             System.out.println("Потребуется дней: " + (estimatedDeliveryTime+1));
-        }else if (deliveryDistance <= 100){
+        } else if (deliveryDistance <= 100){
             System.out.println("Потребуется дней: " + (estimatedDeliveryTime+2));
         }
 
